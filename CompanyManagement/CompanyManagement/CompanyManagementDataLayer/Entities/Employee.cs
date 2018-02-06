@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CompanyEntities
 {
     public class Employee
     {
 
-        public String fname { get; set; }
-        public String lname { get; set; }
-        public String email { get; set; }
-        public int phoneNumber { get; set; }
-        public DateTime hireDate { get; set; }
-        public int departmentMasterId { get; set; }
-        public int salary { get; set; }
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+        public String Email { get; set; }
+        public int PhoneNumber { get; set; }
+        public DateTime HireDate { get; set; }
+        public int DepartmentMasterId { get; set; }
+        public int Salary { get; set; }
     }
 }

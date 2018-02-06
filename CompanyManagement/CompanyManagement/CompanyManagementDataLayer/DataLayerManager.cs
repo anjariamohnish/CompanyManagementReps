@@ -309,10 +309,10 @@ namespace CompanyManagementDataLayer
 
 
                     Project project = new Project();
-                    project.name = data.name;
-                    project.departmentMasterId = data.departmentMasterId;
-                    project.statusMasterId = data.statusMasterId;
-                    project.clientId = data.clientId;
+                    project.name = data.Name;
+                    project.departmentMasterId = data.DepartmentMasterId;
+                    project.statusMasterId = data.StatusMasterId;
+                    project.clientId = data.ClientId;
 
                     companyDb.Projects.InsertOnSubmit(project);
                     companyDb.SubmitChanges();
@@ -339,8 +339,8 @@ namespace CompanyManagementDataLayer
 
 
                     TechnologyMaster technology = new TechnologyMaster();
-                    technology.name = data.name;
-                    technology.version = data.version;
+                    technology.name = data.Name;
+                    technology.version = data.Version;
 
                     companyDb.TechnologyMasters.InsertOnSubmit(technology);
                     companyDb.SubmitChanges();
@@ -392,13 +392,13 @@ namespace CompanyManagementDataLayer
 
 
                     Employee employee = new Employee();
-                    employee.fname = data.fname;
-                    employee.lname = data.lname;
-                    employee.email = data.email;
-                    employee.phoneNumber = data.phoneNumber;
-                    employee.hireDate = data.hireDate;
-                    employee.departmentMasterId = data.departmentMasterId;
-                    employee.salary = data.salary;
+                    employee.firstName = data.FirstName;
+                    employee.lastName = data.LastName;
+                    employee.email = data.Email;
+                    employee.phoneNumber = data.PhoneNumber;
+                    employee.hireDate = data.HireDate;
+                    employee.departmentMasterId = data.DepartmentMasterId;
+                    employee.salary = data.Salary;
 
 
                     companyDb.Employees.InsertOnSubmit(employee);
@@ -423,7 +423,7 @@ namespace CompanyManagementDataLayer
                 Validator validate = new Validator();
 
 
-                if (validate.CheckEmployeeExist(employeeId) == Resource.AllFieldPresent && validate.CheckProjectExist(projectId) == Resource.AllFieldPresent)
+                if (validate.CheckProjectExist(projectId) == Resource.AllFieldPresent)
                 {
                     EmployeeProjectMapper employeeprojectmapper = new EmployeeProjectMapper();
                     employeeprojectmapper.employeeId = employeeId;
@@ -561,9 +561,9 @@ namespace CompanyManagementDataLayer
 
                     Task t = new Task();
 
-                    t.name = task.name;
-                    t.statusId = task.statusId;
-                    t.updateDate = task.updateDate;
+                    t.name = task.Name;
+                    t.statusId = task.StatusId;
+                    t.updateDate = task.UpdateDate;
 
                     companyDb.Tasks.InsertOnSubmit(t);
 
@@ -725,7 +725,7 @@ namespace CompanyManagementDataLayer
 
         // Extra methods for BL
         public int GetTechnologyUsage(int technologyId)
-        {
+        {// perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
 
@@ -737,15 +737,21 @@ namespace CompanyManagementDataLayer
         }
 
 
-        public Boolean CheckTechnologyTaskInProject(int taskId, int technologyId)
-        {
+        public Boolean CheckTechnologyInProject(int taskId, int technologyId)
+        {// perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
 
-                List<int> projectIdList = (from Mapper in companyDb.ProjectTaskMappers where Mapper.taskId == taskId select Mapper.projectId).ToList();
+                List<int> projectIdList = (from Mapper in companyDb.ProjectTaskMappers
+                                           where Mapper.taskId == taskId
+                                           select Mapper.projectId)
+                                           .ToList();
 
 
-                return (from Mapper in companyDb.TechnologyProjectMappers where projectIdList.Contains(Mapper.projectId) && Mapper.technologyId == technologyId select Mapper).Any();
+                return (from Mapper in companyDb.TechnologyProjectMappers
+                        where projectIdList.Contains(Mapper.projectId) && Mapper.technologyId == technologyId
+                        select Mapper)
+                        .Any();
 
 
             }
@@ -756,7 +762,7 @@ namespace CompanyManagementDataLayer
 
 
         public int GetNumberOfTechnologyToTask(int taskId)
-        {
+        {//perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
                 return (from Mapper in companyDb.TaskTechnologyMappers where Mapper.taskId == taskId select Mapper).Count();
@@ -764,6 +770,69 @@ namespace CompanyManagementDataLayer
             }
 
         }
+
+        public int GetNumberOfProject(int employeeId)
+        {
+
+            using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
+            {
+
+                return (from project in companyDb.Projects
+                        where project.projectManagerId == employeeId && !(project.statusMasterId == 3)
+                        select project
+                        ).Count();
+
+            }
+
+
+        }
+
+
+        public int GetAssignedProjectForEmployee(int employeeId)
+        {
+            using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
+            {
+                Validator validate = new Validator();
+                if (validate.CheckEmployeeExist(employeeId) == Resource.AllFieldPresent)
+                {
+                    return (from Mapper in companyDb.EmployeeProjectMappers
+                            where Mapper.employeeId == employeeId && !(Mapper.Project.statusMasterId == 3)
+                            select Mapper).Count();
+                }
+                else
+                {
+
+                    return 0;
+                }
+
+
+            }
+
+
+        }
+
+
+        public int GetTaskStatus(int taskId)
+        {
+            using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
+            {
+                return (from task in companyDb.Tasks where task.taskId == taskId select task.statusId).FirstOrDefault();
+
+            }
+        }
+
+
+        public int GetProjectStatus(int projectId)
+        {
+            using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
+            {
+                return (from project in companyDb.Projects where project.projectId == projectId select project.statusMasterId).FirstOrDefault();
+
+            }
+
+        }
+
+
 
 
     }

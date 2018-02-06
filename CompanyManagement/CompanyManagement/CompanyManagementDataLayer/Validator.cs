@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CompanyManagementDataLayer
 {
@@ -14,19 +12,19 @@ namespace CompanyManagementDataLayer
 
         {
 
-            if (string.IsNullOrEmpty(project.name))
+            if (string.IsNullOrEmpty(project.Name))
             {
                 return Resource.ProjectNameMissing;
             }
-            else if (project.departmentMasterId == 0)
+            else if (project.DepartmentMasterId == 0)
             {
                 return Resource.DepartmentIdMissing;
             }
-            else if (project.statusMasterId == 0)
+            else if (project.StatusMasterId == 0)
             {
                 return Resource.StatusIdMissing;
             }
-            else if (project.clientId == 0)
+            else if (project.ClientId == 0)
             {
                 return Resource.ClientIdMissing;
             }
@@ -39,27 +37,27 @@ namespace CompanyManagementDataLayer
 
         public String CheckEmployeeForNull(CompanyEntities.Employee employee)
         {
-            if (string.IsNullOrEmpty(employee.fname) || string.IsNullOrEmpty(employee.lname))
+            if (string.IsNullOrEmpty(employee.FirstName) || string.IsNullOrEmpty(employee.LastName))
             {
                 return Resource.EmployeeNameMissing;
             }
-            else if (string.IsNullOrEmpty(employee.email))
+            else if (string.IsNullOrEmpty(employee.Email))
             {
                 return Resource.EmployeeEmailMissing;
             }
-            else if (employee.phoneNumber == 0)
+            else if (employee.PhoneNumber == 0)
             {
                 return Resource.EmployeePhoneNumberMissing;
             }
-            else if (employee.hireDate == null)
+            else if (employee.HireDate == null)
             {
                 return Resource.EmployeeHirDateMissing;
             }
-            else if (employee.departmentMasterId == 0)
+            else if (employee.DepartmentMasterId == 0)
             {
                 return Resource.EmployeeDepartmentIdMissing;
             }
-            else if (employee.salary == 0)
+            else if (employee.Salary == 0)
             {
                 return Resource.EmployeeSalaryMissing;
             }
@@ -71,11 +69,11 @@ namespace CompanyManagementDataLayer
 
         public String CheckTechnologForNull(CompanyEntities.Technology technology)
         {
-            if (string.IsNullOrEmpty(technology.name))
+            if (string.IsNullOrEmpty(technology.Name))
             {
                 return Resource.TechnologyNameMissing;
             }
-            else if (float.IsNaN(technology.version))
+            else if (float.IsNaN(technology.Version))
             {
                 return Resource.TechnologyVersionMissing;
             }
@@ -88,11 +86,11 @@ namespace CompanyManagementDataLayer
 
         public String CheckTaskForNull(CompanyEntities.Task task)
         {
-            if (string.IsNullOrEmpty(task.name))
+            if (string.IsNullOrEmpty(task.Name))
             {
                 return Resource.TaskNameMissing;
             }
-            else if (task.statusId == 0)
+            else if (task.StatusId == 0)
             {
                 return Resource.StatusIdMissing;
             }
@@ -218,12 +216,13 @@ namespace CompanyManagementDataLayer
                 {
                     if (!(technologyid == 0))
                     {
-                        
+
                         if (!(from technology in companyDb.TechnologyMasters where technology.technologyMasterId == technologyid select technology).Any())
                         {
                             count++;
                         }
-                    }else
+                    }
+                    else
                     {
                         count++;
                     }

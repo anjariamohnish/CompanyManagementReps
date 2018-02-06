@@ -18,3 +18,11 @@ C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManage
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csproj.GenerateResource.Cache
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.dll
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.Resource.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csproj.GenerateResource.Cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.pdb
