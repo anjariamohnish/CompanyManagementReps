@@ -61,11 +61,83 @@ namespace CompanyManagementBusinessLayer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Project Cannot Be Deleted As It is Running State.
+        /// </summary>
+        internal static string CannotDeleteRunningProject {
+            get {
+                return ResourceManager.GetString("CannotDeleteRunningProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Task Cannot Be Deleted As It is Running State.
+        /// </summary>
+        internal static string CannotDeleteRunningTask {
+            get {
+                return ResourceManager.GetString("CannotDeleteRunningTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot delete technology as it used in more than 2 projects.
+        /// </summary>
+        internal static string DeleteProjectError {
+            get {
+                return ResourceManager.GetString("DeleteProjectError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee Cannot Work For Project as Employee is working for max projects.
+        /// </summary>
+        internal static string EmployeeAssignmentError {
+            get {
+                return ResourceManager.GetString("EmployeeAssignmentError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2.
+        /// </summary>
+        internal static string EmployeeAssignmentValue {
+            get {
+                return ResourceManager.GetString("EmployeeAssignmentValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot Assign Project As Project Manager is managing maximum Projects.
+        /// </summary>
+        internal static string ExcessProjectForManager {
+            get {
+                return ResourceManager.GetString("ExcessProjectForManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cannot Assign Technology To Task as More than 4 Technology cannot be assigned.
         /// </summary>
         internal static string MoreTechnologyThanRequired {
             get {
                 return ResourceManager.GetString("MoreTechnologyThanRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.
+        /// </summary>
+        internal static string ProjectAssignmentValue {
+            get {
+                return ResourceManager.GetString("ProjectAssignmentValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Task Cannot Be Created on Completed Project.
+        /// </summary>
+        internal static string TaskCannotAssignCompletedProject {
+            get {
+                return ResourceManager.GetString("TaskCannotAssignCompletedProject", resourceCulture);
             }
         }
         

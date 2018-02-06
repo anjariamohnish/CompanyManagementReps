@@ -112,13 +112,37 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CannotDeleteRunningProject" xml:space="preserve">
+    <value>Project Cannot Be Deleted As It is Running State</value>
+  </data>
+  <data name="CannotDeleteRunningTask" xml:space="preserve">
+    <value>Task Cannot Be Deleted As It is Running State</value>
+  </data>
+  <data name="DeleteProjectError" xml:space="preserve">
+    <value>Cannot delete technology as it used in more than 2 projects</value>
+  </data>
+  <data name="EmployeeAssignmentError" xml:space="preserve">
+    <value>Employee Cannot Work For Project as Employee is working for max projects</value>
+  </data>
+  <data name="EmployeeAssignmentValue" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ExcessProjectForManager" xml:space="preserve">
+    <value>Cannot Assign Project As Project Manager is managing maximum Projects</value>
+  </data>
   <data name="MoreTechnologyThanRequired" xml:space="preserve">
     <value>Cannot Assign Technology To Task as More than 4 Technology cannot be assigned</value>
+  </data>
+  <data name="ProjectAssignmentValue" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TaskCannotAssignCompletedProject" xml:space="preserve">
+    <value>Task Cannot Be Created on Completed Project</value>
   </data>
   <data name="TechnologyAssignmentValue" xml:space="preserve">
     <value>4</value>

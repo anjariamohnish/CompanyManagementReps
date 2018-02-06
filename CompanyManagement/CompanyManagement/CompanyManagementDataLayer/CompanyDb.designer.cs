@@ -548,9 +548,9 @@ namespace CompanyManagementDataLayer
 		
 		private int _employeeId;
 		
-		private string _fname;
+		private string _firstName;
 		
-		private string _lname;
+		private string _lastName;
 		
 		private string _email;
 		
@@ -568,6 +568,8 @@ namespace CompanyManagementDataLayer
 		
 		private EntitySet<EmployeeTaskMapper> _EmployeeTaskMappers;
 		
+		private EntitySet<Project> _Projects;
+		
 		private EntityRef<DepartmentMaster> _DepartmentMaster;
 		
     #region Extensibility Method Definitions
@@ -576,10 +578,10 @@ namespace CompanyManagementDataLayer
     partial void OnCreated();
     partial void OnemployeeIdChanging(int value);
     partial void OnemployeeIdChanged();
-    partial void OnfnameChanging(string value);
-    partial void OnfnameChanged();
-    partial void OnlnameChanging(string value);
-    partial void OnlnameChanged();
+    partial void OnfirstNameChanging(string value);
+    partial void OnfirstNameChanged();
+    partial void OnlastNameChanging(string value);
+    partial void OnlastNameChanged();
     partial void OnemailChanging(string value);
     partial void OnemailChanged();
     partial void OnphoneNumberChanging(long value);
@@ -597,6 +599,7 @@ namespace CompanyManagementDataLayer
 			this._DepartmentMasters = new EntitySet<DepartmentMaster>(new Action<DepartmentMaster>(this.attach_DepartmentMasters), new Action<DepartmentMaster>(this.detach_DepartmentMasters));
 			this._EmployeeProjectMappers = new EntitySet<EmployeeProjectMapper>(new Action<EmployeeProjectMapper>(this.attach_EmployeeProjectMappers), new Action<EmployeeProjectMapper>(this.detach_EmployeeProjectMappers));
 			this._EmployeeTaskMappers = new EntitySet<EmployeeTaskMapper>(new Action<EmployeeTaskMapper>(this.attach_EmployeeTaskMappers), new Action<EmployeeTaskMapper>(this.detach_EmployeeTaskMappers));
+			this._Projects = new EntitySet<Project>(new Action<Project>(this.attach_Projects), new Action<Project>(this.detach_Projects));
 			this._DepartmentMaster = default(EntityRef<DepartmentMaster>);
 			OnCreated();
 		}
@@ -621,42 +624,42 @@ namespace CompanyManagementDataLayer
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fname", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string fname
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_firstName", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string firstName
 		{
 			get
 			{
-				return this._fname;
+				return this._firstName;
 			}
 			set
 			{
-				if ((this._fname != value))
+				if ((this._firstName != value))
 				{
-					this.OnfnameChanging(value);
+					this.OnfirstNameChanging(value);
 					this.SendPropertyChanging();
-					this._fname = value;
-					this.SendPropertyChanged("fname");
-					this.OnfnameChanged();
+					this._firstName = value;
+					this.SendPropertyChanged("firstName");
+					this.OnfirstNameChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lname", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string lname
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lastName", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string lastName
 		{
 			get
 			{
-				return this._lname;
+				return this._lastName;
 			}
 			set
 			{
-				if ((this._lname != value))
+				if ((this._lastName != value))
 				{
-					this.OnlnameChanging(value);
+					this.OnlastNameChanging(value);
 					this.SendPropertyChanging();
-					this._lname = value;
-					this.SendPropertyChanged("lname");
-					this.OnlnameChanged();
+					this._lastName = value;
+					this.SendPropertyChanged("lastName");
+					this.OnlastNameChanged();
 				}
 			}
 		}
@@ -804,6 +807,19 @@ namespace CompanyManagementDataLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Project", Storage="_Projects", ThisKey="employeeId", OtherKey="projectManagerId")]
+		public EntitySet<Project> Projects
+		{
+			get
+			{
+				return this._Projects;
+			}
+			set
+			{
+				this._Projects.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DepartmentMaster_Employee", Storage="_DepartmentMaster", ThisKey="departmentMasterId", OtherKey="departmentMasterId", IsForeignKey=true)]
 		public DepartmentMaster DepartmentMaster
 		{
@@ -889,6 +905,18 @@ namespace CompanyManagementDataLayer
 		}
 		
 		private void detach_EmployeeTaskMappers(EmployeeTaskMapper entity)
+		{
+			this.SendPropertyChanging();
+			entity.Employee = null;
+		}
+		
+		private void attach_Projects(Project entity)
+		{
+			this.SendPropertyChanging();
+			entity.Employee = this;
+		}
+		
+		private void detach_Projects(Project entity)
 		{
 			this.SendPropertyChanging();
 			entity.Employee = null;
@@ -1360,6 +1388,8 @@ namespace CompanyManagementDataLayer
 		
 		private int _clientId;
 		
+		private int _projectManagerId;
+		
 		private EntitySet<EmployeeProjectMapper> _EmployeeProjectMappers;
 		
 		private EntitySet<ProjectTaskMapper> _ProjectTaskMappers;
@@ -1369,6 +1399,8 @@ namespace CompanyManagementDataLayer
 		private EntityRef<Client> _Client;
 		
 		private EntityRef<DepartmentMaster> _DepartmentMaster;
+		
+		private EntityRef<Employee> _Employee;
 		
 		private EntityRef<StatusMaster> _StatusMaster;
 		
@@ -1386,6 +1418,8 @@ namespace CompanyManagementDataLayer
     partial void OnstatusMasterIdChanged();
     partial void OnclientIdChanging(int value);
     partial void OnclientIdChanged();
+    partial void OnprojectManagerIdChanging(int value);
+    partial void OnprojectManagerIdChanged();
     #endregion
 		
 		public Project()
@@ -1395,6 +1429,7 @@ namespace CompanyManagementDataLayer
 			this._TechnologyProjectMappers = new EntitySet<TechnologyProjectMapper>(new Action<TechnologyProjectMapper>(this.attach_TechnologyProjectMappers), new Action<TechnologyProjectMapper>(this.detach_TechnologyProjectMappers));
 			this._Client = default(EntityRef<Client>);
 			this._DepartmentMaster = default(EntityRef<DepartmentMaster>);
+			this._Employee = default(EntityRef<Employee>);
 			this._StatusMaster = default(EntityRef<StatusMaster>);
 			OnCreated();
 		}
@@ -1511,6 +1546,30 @@ namespace CompanyManagementDataLayer
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_projectManagerId", DbType="Int NOT NULL")]
+		public int projectManagerId
+		{
+			get
+			{
+				return this._projectManagerId;
+			}
+			set
+			{
+				if ((this._projectManagerId != value))
+				{
+					if (this._Employee.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnprojectManagerIdChanging(value);
+					this.SendPropertyChanging();
+					this._projectManagerId = value;
+					this.SendPropertyChanged("projectManagerId");
+					this.OnprojectManagerIdChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Project_EmployeeProjectMapper", Storage="_EmployeeProjectMappers", ThisKey="projectId", OtherKey="projectId")]
 		public EntitySet<EmployeeProjectMapper> EmployeeProjectMappers
 		{
@@ -1614,6 +1673,40 @@ namespace CompanyManagementDataLayer
 						this._departmentMasterId = default(int);
 					}
 					this.SendPropertyChanged("DepartmentMaster");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Project", Storage="_Employee", ThisKey="projectManagerId", OtherKey="employeeId", IsForeignKey=true)]
+		public Employee Employee
+		{
+			get
+			{
+				return this._Employee.Entity;
+			}
+			set
+			{
+				Employee previousValue = this._Employee.Entity;
+				if (((previousValue != value) 
+							|| (this._Employee.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Employee.Entity = null;
+						previousValue.Projects.Remove(this);
+					}
+					this._Employee.Entity = value;
+					if ((value != null))
+					{
+						value.Projects.Add(this);
+						this._projectManagerId = value.employeeId;
+					}
+					else
+					{
+						this._projectManagerId = default(int);
+					}
+					this.SendPropertyChanged("Employee");
 				}
 			}
 		}

@@ -6,3 +6,11 @@ C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\D
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.exe
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\program.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\program.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\program.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
