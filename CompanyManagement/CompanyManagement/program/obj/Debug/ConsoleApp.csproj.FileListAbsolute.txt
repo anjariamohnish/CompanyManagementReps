@@ -1,0 +1,8 @@
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\program.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyEntities.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyEntities.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.pdb

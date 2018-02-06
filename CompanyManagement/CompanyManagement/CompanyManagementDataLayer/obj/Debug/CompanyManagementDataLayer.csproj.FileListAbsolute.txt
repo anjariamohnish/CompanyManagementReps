@@ -1,0 +1,20 @@
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll.config
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.pdb
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csprojResolveAssemblyReference.cache
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csproj.GenerateResource.Cache
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.dll
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.pdb
+C:\Users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyEntities.dll
+C:\Users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyEntities.pdb
+C:\Users\mohnish\Documents\Visual Studio 2015\Projects\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.Resource.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyEntities.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\bin\Debug\CompanyEntities.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.Resource.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csproj.GenerateResource.Cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.pdb

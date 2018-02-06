@@ -1,0 +1,13 @@
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\program.exe.config
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\program.exe
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\program.pdb
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.dll
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.pdb
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\obj\Debug\program.csprojResolveAssemblyReference.cache
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\obj\Debug\program.exe
+c:\users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\obj\Debug\program.pdb
+C:\Users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\CompanyEntities.dll
+C:\Users\mohnish\documents\visual studio 2015\Projects\CompanyManagement\program\bin\Debug\CompanyEntities.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\program\obj\Debug\program.pdb
