@@ -1,1 +1,12 @@
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\CompanyManagementBusinessLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\CompanyManagementBusinessLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\AutoMapper.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\bin\Debug\AutoMapper.xml
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.Resources.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.csproj.GenerateResource.Cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementBusinessLayer\obj\Debug\CompanyManagementBusinessLayer.pdb

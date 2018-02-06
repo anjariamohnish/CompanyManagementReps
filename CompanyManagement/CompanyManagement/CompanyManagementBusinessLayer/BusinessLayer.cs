@@ -7,20 +7,21 @@ namespace CompanyManagementBusinessLayer
 {
     public class BusinessLayer
     {
+        const int maxUsageOfTechnology = 2;
 
 
         public string DeleteTechnology(int technologyId)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
 
-            if (context.GetTechnologyUsage(technologyId) < 2)
+            if (dataLayer.GetCountOfTechnologyInProjects(technologyId) < maxUsageOfTechnology)
             {
-                return context.DeleteTechnology(technologyId);
+                return dataLayer.DeleteTechnology(technologyId);
             }
             else
             {
-                return Resources.DeleteProjectError;
+                return Resources.TechnologyUsedInMoreThanTwoProject;
 
             }
 
@@ -32,16 +33,16 @@ namespace CompanyManagementBusinessLayer
         {
 
 
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
-            if (context.GetNumberOfTechnologyToTask(taskId) < Convert.ToInt32(Resources.TechnologyAssignmentValue))
+            if (dataLayer.GetCountOfTechnologyInTask(taskId) < Convert.ToInt32(Resources.TechnologyMaxAssignValue))
             {
-                return Resources.MoreTechnologyThanRequired;
+                return Resources.ExcessTechnologyThanRequired;
             }
 
-            if (context.CheckTechnologyInProject(taskId, technologyId))
+            if (dataLayer.IsTechnologyAssignedToProject(taskId, technologyId))
             {
-                return context.AssignTechnologyToTask(technologyId, taskId);
+                return dataLayer.AssignTechnologyToTask(technologyId, taskId);
             }
             else
             {
@@ -55,27 +56,27 @@ namespace CompanyManagementBusinessLayer
 
         public string AddProject(BusinessLayerEntities.BOProject project)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
-            if (context.GetNumberOfProject(project.ProjectManagerId) < Convert.ToInt32(Resources.ProjectAssignmentValue))
+            if (dataLayer.GetCountOfProjectsAssignedToProjectManager(project.ProjectManagerId) < Convert.ToInt32(Resources.ProjectMaxAssignValue))
             {
 
-                return context.AddProject(Mapper.Map<BusinessLayerEntities.BOProject, CompanyEntities.Project>(project));
+                return dataLayer.AddProject(Mapper.Map<BusinessLayerEntities.BOProject, CompanyEntities.Project>(project));
             }
             else
             {
-                return Resources.ExcessProjectForManager;
+                return Resources.ExcessProjectForProjectManager;
             }
 
         }
 
         public string AssignEmployeeToProject(int employeeId, int projectId)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
-            if (context.GetAssignedProjectForEmployee(employeeId) < Convert.ToInt32(Resources.EmployeeAssignmentValue))
+            if (dataLayer.GetCountOfProjectsAssignedToEmployee(employeeId) < Convert.ToInt32(Resources.EmployeeMaxAssignValue))
             {
-                return context.AssignEmployeeToProject(employeeId, projectId);
+                return dataLayer.AssignEmployeeToProject(employeeId, projectId);
             }
             else
             {
@@ -87,11 +88,11 @@ namespace CompanyManagementBusinessLayer
 
         public string DeleteTask(int taskId)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
-            if (context.GetTaskStatus(taskId) != (int)Status.Active)
+            if (dataLayer.GetTaskStatus(taskId) != (int)Status.Active)
             {
-                return context.DeleteTask(taskId);
+                return dataLayer.DeleteTask(taskId);
             }
             else
             {
@@ -103,12 +104,12 @@ namespace CompanyManagementBusinessLayer
 
         public string DeleteProject(int projectId)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
 
-            if (context.GetProjectStatus(projectId) != (int)Status.Active)
+            if (dataLayer.GetProjectStatus(projectId) != (int)Status.Active)
             {
-                return context.DeleteProject(projectId);
+                return dataLayer.DeleteProject(projectId);
             }
             else
             {
@@ -120,12 +121,12 @@ namespace CompanyManagementBusinessLayer
 
         public string CreateTaskInProject(BusinessLayerEntities.BOTask task, int projectId)
         {
-            DataLayerManager context = new DataLayerManager();
+            DataLayerManager dataLayer = new DataLayerManager();
 
-            if (context.GetProjectStatus(projectId) != (int)Status.Completed)
+            if (dataLayer.GetProjectStatus(projectId) != (int)Status.Completed)
             {
 
-                return context.CreateTaskInProject(Mapper.Map<BusinessLayerEntities.BOTask, CompanyEntities.Task>(task), projectId);
+                return dataLayer.CreateTaskInProject(Mapper.Map<BusinessLayerEntities.BOTask, CompanyEntities.Task>(task), projectId);
             }
             else
             {

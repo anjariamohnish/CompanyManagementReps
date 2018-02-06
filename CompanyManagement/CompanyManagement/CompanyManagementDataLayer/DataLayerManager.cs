@@ -6,11 +6,6 @@ namespace CompanyManagementDataLayer
 {
 
 
-
-
-
-
-
     public class DataLayerManager
     {
 
@@ -724,7 +719,7 @@ namespace CompanyManagementDataLayer
 
 
         // Extra methods for BL
-        public int GetTechnologyUsage(int technologyId)
+        public int GetCountOfTechnologyInProjects(int technologyId)
         {// perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
@@ -737,7 +732,7 @@ namespace CompanyManagementDataLayer
         }
 
 
-        public Boolean CheckTechnologyInProject(int taskId, int technologyId)
+        public Boolean IsTechnologyAssignedToProject(int taskId, int technologyId)
         {// perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
@@ -761,7 +756,7 @@ namespace CompanyManagementDataLayer
         }
 
 
-        public int GetNumberOfTechnologyToTask(int taskId)
+        public int GetCountOfTechnologyInTask(int taskId)
         {//perfect
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
@@ -771,7 +766,7 @@ namespace CompanyManagementDataLayer
 
         }
 
-        public int GetNumberOfProject(int employeeId)
+        public int GetCountOfProjectsAssignedToProjectManager(int employeeId)
         {
 
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
@@ -788,7 +783,7 @@ namespace CompanyManagementDataLayer
         }
 
 
-        public int GetAssignedProjectForEmployee(int employeeId)
+        public int GetCountOfProjectsAssignedToEmployee(int employeeId)
         {
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {

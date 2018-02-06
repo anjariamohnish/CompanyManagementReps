@@ -79,15 +79,6 @@ namespace CompanyManagementBusinessLayer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot delete technology as it used in more than 2 projects.
-        /// </summary>
-        internal static string DeleteProjectError {
-            get {
-                return ResourceManager.GetString("DeleteProjectError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Employee Cannot Work For Project as Employee is working for max projects.
         /// </summary>
         internal static string EmployeeAssignmentError {
@@ -99,36 +90,36 @@ namespace CompanyManagementBusinessLayer {
         /// <summary>
         ///   Looks up a localized string similar to 2.
         /// </summary>
-        internal static string EmployeeAssignmentValue {
+        internal static string EmployeeMaxAssignValue {
             get {
-                return ResourceManager.GetString("EmployeeAssignmentValue", resourceCulture);
+                return ResourceManager.GetString("EmployeeMaxAssignValue", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Cannot Assign Project As Project Manager is managing maximum Projects.
         /// </summary>
-        internal static string ExcessProjectForManager {
+        internal static string ExcessProjectForProjectManager {
             get {
-                return ResourceManager.GetString("ExcessProjectForManager", resourceCulture);
+                return ResourceManager.GetString("ExcessProjectForProjectManager", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Cannot Assign Technology To Task as More than 4 Technology cannot be assigned.
         /// </summary>
-        internal static string MoreTechnologyThanRequired {
+        internal static string ExcessTechnologyThanRequired {
             get {
-                return ResourceManager.GetString("MoreTechnologyThanRequired", resourceCulture);
+                return ResourceManager.GetString("ExcessTechnologyThanRequired", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to 3.
         /// </summary>
-        internal static string ProjectAssignmentValue {
+        internal static string ProjectMaxAssignValue {
             get {
-                return ResourceManager.GetString("ProjectAssignmentValue", resourceCulture);
+                return ResourceManager.GetString("ProjectMaxAssignValue", resourceCulture);
             }
         }
         
@@ -144,9 +135,9 @@ namespace CompanyManagementBusinessLayer {
         /// <summary>
         ///   Looks up a localized string similar to 4.
         /// </summary>
-        internal static string TechnologyAssignmentValue {
+        internal static string TechnologyMaxAssignValue {
             get {
-                return ResourceManager.GetString("TechnologyAssignmentValue", resourceCulture);
+                return ResourceManager.GetString("TechnologyMaxAssignValue", resourceCulture);
             }
         }
         
@@ -156,6 +147,15 @@ namespace CompanyManagementBusinessLayer {
         internal static string TechnologyNotInProject {
             get {
                 return ResourceManager.GetString("TechnologyNotInProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot delete technology as it used in more than 2 projects.
+        /// </summary>
+        internal static string TechnologyUsedInMoreThanTwoProject {
+            get {
+                return ResourceManager.GetString("TechnologyUsedInMoreThanTwoProject", resourceCulture);
             }
         }
     }

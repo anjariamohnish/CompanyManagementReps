@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace CompanyEntities
+﻿namespace CompanyEntities
 {
     public class Technology
     {
 
-        public String Name { get; set; }
+        public string Name { get; set; }
         public float Version { get; set; }
     }
 }

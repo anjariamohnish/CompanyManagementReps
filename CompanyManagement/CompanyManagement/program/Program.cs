@@ -1,4 +1,4 @@
-﻿using CompanyManagementDataLayer;
+﻿
 using System;
 namespace program
 {
@@ -6,7 +6,6 @@ namespace program
     {
         static void Main(string[] args)
         {
-            DataLayerManager obj = new DataLayerManager();
 
             Console.ReadLine();
 
