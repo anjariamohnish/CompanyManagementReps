@@ -56,7 +56,7 @@ namespace CompanyManagementBusinessLayer
         {
             DataLayerManager context = new DataLayerManager();
 
-            if (context.GetNumberOfProject(project.ProjectManagerId) > Convert.ToInt32(Resources.ProjectAssignmentValue))
+            if (context.GetNumberOfProject(project.ProjectManagerId) < Convert.ToInt32(Resources.ProjectAssignmentValue))
             {
 
                 return context.AddProject(Mapper.Map<BusinessLayerEntities.BOProject, CompanyEntities.Project>(project));
@@ -72,7 +72,7 @@ namespace CompanyManagementBusinessLayer
         {
             DataLayerManager context = new DataLayerManager();
 
-            if (context.GetAssignedProjectForEmployee(employeeId) <= Convert.ToInt32(Resources.EmployeeAssignmentValue))
+            if (context.GetAssignedProjectForEmployee(employeeId) < Convert.ToInt32(Resources.EmployeeAssignmentValue))
             {
                 return context.AssignEmployeeToProject(employeeId, projectId);
             }

@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CannotDeleteRunningProject" xml:space="preserve">
     <value>Project Cannot Be Deleted As It is Running State</value>
@@ -132,7 +132,7 @@
   <data name="EmployeeAssignmentValue" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="MoreProjectThanRequired" xml:space="preserve">
+  <data name="ExcessProjectForManager" xml:space="preserve">
     <value>Cannot Assign Project As Project Manager is managing maximum Projects</value>
   </data>
   <data name="MoreTechnologyThanRequired" xml:space="preserve">
