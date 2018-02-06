@@ -2,6 +2,7 @@
 using CompanyManagementDataLayer;
 using System;
 
+
 namespace CompanyManagementBusinessLayer
 {
     public class BusinessLayer
@@ -99,6 +100,7 @@ namespace CompanyManagementBusinessLayer
 
 
         }
+
         public string DeleteProject(int projectId)
         {
             DataLayerManager context = new DataLayerManager();
