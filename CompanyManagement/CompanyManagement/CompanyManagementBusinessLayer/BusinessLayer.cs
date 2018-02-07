@@ -10,7 +10,6 @@ namespace CompanyManagementBusinessLayer
         const int maxUsageOfTechnology = 2;
 
 
-
         public string DeleteTechnology(int technologyId)
         {
             DataLayerManager dataLayer = new DataLayerManager();
@@ -58,14 +57,13 @@ namespace CompanyManagementBusinessLayer
         public string AddProject(BusinessLayerEntities.BOProject project)
         {
 
-            Mapper.Initialize(config => config.CreateMap<BusinessLayerEntities.BOProject, CompanyEntities.Project>());
-
             DataLayerManager dataLayer = new DataLayerManager();
 
             if (dataLayer.GetCountOfProjectsAssignedToProjectManager(project.ProjectManagerId) < Convert.ToInt32(Resources.ProjectMaxAssignValue))
             {
+                IMapper mapper = CompanyManagementMapper.GetMapper();
 
-                return dataLayer.AddProject(Mapper.Map<BusinessLayerEntities.BOProject, CompanyEntities.Project>(project));
+                return dataLayer.AddProject(mapper.Map<BusinessLayerEntities.BOProject, CompanyEntities.Project>(project));
             }
             else
             {
@@ -126,12 +124,12 @@ namespace CompanyManagementBusinessLayer
         public string CreateTaskInProject(BusinessLayerEntities.BOTask task, int projectId)
         {
             DataLayerManager dataLayer = new DataLayerManager();
-            Mapper.Initialize(config => config.CreateMap<BusinessLayerEntities.BOTask, CompanyEntities.Task>());
-
             if (dataLayer.GetProjectStatus(projectId) != (int)Status.Completed)
             {
 
-                return dataLayer.CreateTaskInProject(Mapper.Map<BusinessLayerEntities.BOTask, CompanyEntities.Task>(task), projectId);
+                IMapper mapper = CompanyManagementMapper.GetMapper();
+
+                return dataLayer.CreateTaskInProject(mapper.Map<BusinessLayerEntities.BOTask, CompanyEntities.Task>(task), projectId);
             }
             else
             {

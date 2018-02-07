@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BusinessLayer.cs" />
     <Compile Include="BusinessLayerEnums.cs" />
+    <Compile Include="CompanyManagementMapper.cs" />
     <Compile Include="Entities\BOEmployee.cs" />
     <Compile Include="Entities\BOProject.cs" />
     <Compile Include="Entities\BOTask.cs" />
