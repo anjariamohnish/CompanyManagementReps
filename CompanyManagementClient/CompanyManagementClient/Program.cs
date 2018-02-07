@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CompanyManagementClient
@@ -12,6 +11,7 @@ namespace CompanyManagementClient
         [STAThread]
         static void Main()
         {
+            // call main
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new main());

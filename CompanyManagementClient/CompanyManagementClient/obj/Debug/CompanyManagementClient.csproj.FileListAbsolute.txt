@@ -13,3 +13,5 @@ C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\Com
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteProject.resources
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteTask.resources
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteTechnology.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.popup.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\bin\Debug\CompanyManagementClient.exe.config
