@@ -1,5 +1,5 @@
 ﻿using BusinessLayerEntities;
-using System;
+using CompanyManagementBusinessLayer;
 
 namespace CompanyManagementWCF
 {
@@ -7,58 +7,60 @@ namespace CompanyManagementWCF
     {
         public string AddProject(BOProject project)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
+            return businessLayer.AddProject(project);
 
-
-            throw new NotImplementedException();
         }
 
         public string AssignEmployeeToProject(int employeeId, int projectId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
+            return businessLayer.AssignEmployeeToProject(employeeId, projectId);
 
-
-            throw new NotImplementedException();
         }
 
         public string AssignTechnologyToTask(int technologyId, int taskId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
 
+            return businessLayer.AssignTechnologyToTask(technologyId, taskId);
 
-            throw new NotImplementedException();
         }
 
         public string CreateTaskInProject(BOTask task, int projectId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
 
+            return businessLayer.CreateTaskInProject(task, projectId);
 
-            throw new NotImplementedException();
         }
 
         public string DeleteProject(int projectId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
+            return businessLayer.DeleteProject(projectId);
 
-
-            throw new NotImplementedException();
         }
 
         public string DeleteTask(int taskId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
+            return businessLayer.DeleteTask(taskId);
 
-
-            throw new NotImplementedException();
         }
 
         public string DeleteTechnology(int technologyId)
         {
+            BusinessLayer businessLayer = new BusinessLayer();
 
+            return businessLayer.DeleteTechnology(technologyId);
 
-
-            throw new NotImplementedException();
         }
     }
 }
