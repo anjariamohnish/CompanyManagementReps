@@ -1,5 +1,5 @@
-﻿using System.ServiceModel;
-
+﻿using BusinessLayerEntities;
+using System.ServiceModel;
 namespace CompanyManagementWCF
 {
     [ServiceContract]
@@ -13,7 +13,7 @@ namespace CompanyManagementWCF
         string AssignTechnologyToTask(int technologyId, int taskId);
 
         [OperationContract]
-        string AddProject(BusinessLayerEntities.BOProject project);
+        string AddProject(BOProject project);
 
         [OperationContract]
         string AssignEmployeeToProject(int employeeId, int projectId);
@@ -25,7 +25,7 @@ namespace CompanyManagementWCF
         string DeleteProject(int projectId);
 
         [OperationContract]
-        string CreateTaskInProject(BusinessLayerEntities.BOTask task, int projectId);
+        string CreateTaskInProject(BOTask task, int projectId);
 
 
     }

@@ -1,0 +1,12 @@
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\obj\Debug\CompanyManagementWCF.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementWCF.dll.config
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementWCF.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementWCF.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementBusinessLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementDataLayer.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\AutoMapper.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementBusinessLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\bin\Debug\AutoMapper.xml
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\obj\Debug\CompanyManagementWCF.dll
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementWCF\obj\Debug\CompanyManagementWCF.pdb
