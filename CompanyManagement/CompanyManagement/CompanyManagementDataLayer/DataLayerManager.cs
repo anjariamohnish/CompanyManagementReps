@@ -308,7 +308,7 @@ namespace CompanyManagementDataLayer
                     project.departmentMasterId = data.DepartmentMasterId;
                     project.statusMasterId = data.StatusMasterId;
                     project.clientId = data.ClientId;
-
+                    project.projectManagerId = data.ProjectManagerId;
                     companyDb.Projects.InsertOnSubmit(project);
                     companyDb.SubmitChanges();
 
@@ -733,7 +733,7 @@ namespace CompanyManagementDataLayer
 
 
         public Boolean IsTechnologyAssignedToProject(int taskId, int technologyId)
-        {// perfect
+        {
             using (CompanyDbDataContext companyDb = new CompanyDbDataContext())
             {
 

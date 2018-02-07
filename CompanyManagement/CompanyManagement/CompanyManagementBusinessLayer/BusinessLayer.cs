@@ -10,6 +10,7 @@ namespace CompanyManagementBusinessLayer
         const int maxUsageOfTechnology = 2;
 
 
+
         public string DeleteTechnology(int technologyId)
         {
             DataLayerManager dataLayer = new DataLayerManager();
@@ -35,7 +36,7 @@ namespace CompanyManagementBusinessLayer
 
             DataLayerManager dataLayer = new DataLayerManager();
 
-            if (dataLayer.GetCountOfTechnologyInTask(taskId) < Convert.ToInt32(Resources.TechnologyMaxAssignValue))
+            if (dataLayer.GetCountOfTechnologyInTask(taskId) > Convert.ToInt32(Resources.TechnologyMaxAssignValue))
             {
                 return Resources.ExcessTechnologyThanRequired;
             }
@@ -56,6 +57,9 @@ namespace CompanyManagementBusinessLayer
 
         public string AddProject(BusinessLayerEntities.BOProject project)
         {
+
+            Mapper.Initialize(config => config.CreateMap<BusinessLayerEntities.BOProject, CompanyEntities.Project>());
+
             DataLayerManager dataLayer = new DataLayerManager();
 
             if (dataLayer.GetCountOfProjectsAssignedToProjectManager(project.ProjectManagerId) < Convert.ToInt32(Resources.ProjectMaxAssignValue))
@@ -122,6 +126,7 @@ namespace CompanyManagementBusinessLayer
         public string CreateTaskInProject(BusinessLayerEntities.BOTask task, int projectId)
         {
             DataLayerManager dataLayer = new DataLayerManager();
+            Mapper.Initialize(config => config.CreateMap<BusinessLayerEntities.BOTask, CompanyEntities.Task>());
 
             if (dataLayer.GetProjectStatus(projectId) != (int)Status.Completed)
             {

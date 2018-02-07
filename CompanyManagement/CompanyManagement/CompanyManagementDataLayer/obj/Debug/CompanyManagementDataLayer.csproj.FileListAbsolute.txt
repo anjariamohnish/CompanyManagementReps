@@ -27,3 +27,4 @@ C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyMa
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csproj.GenerateResource.Cache
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.dll
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\CompanyManagementDataLayer\obj\Debug\CompanyManagementDataLayer.csprojResolveAssemblyReference.cache
