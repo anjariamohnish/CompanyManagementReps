@@ -1,0 +1,15 @@
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\bin\Debug\CompanyManagementClient.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\bin\Debug\CompanyManagementClient.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.csprojResolveAssemblyReference.cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.main.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.Properties.Resources.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.csproj.GenerateResource.Cache
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.exe
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.AddProject.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.AssignEmployeeToProject.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.AssignTechnologyToTask.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.CreateTaskInProject.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteProject.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteTask.resources
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagementClient\CompanyManagementClient\obj\Debug\CompanyManagementClient.DeleteTechnology.resources

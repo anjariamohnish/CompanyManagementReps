@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace CompanyManagementClient
 {
-    public partial class Form1 : Form
+    public partial class DeleteTechnology : Form
     {
-        public Form1()
+        public DeleteTechnology()
         {
             InitializeComponent();
         }
