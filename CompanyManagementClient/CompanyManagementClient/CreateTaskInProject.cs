@@ -13,6 +13,7 @@ namespace CompanyManagementClient
 
         private void button1_Click(object sender, System.EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             CompanyMangementServiceClient serviceReference = new CompanyMangementServiceClient();
             BOTask task = new BOTask();
             task.Name = textBox2.Text;

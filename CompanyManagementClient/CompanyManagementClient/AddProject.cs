@@ -13,6 +13,7 @@ namespace CompanyManagementClient
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             CompanyMangementServiceClient serviceReference = new CompanyMangementServiceClient();
             BOProject project = new BOProject();
 
