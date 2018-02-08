@@ -10,11 +10,9 @@ C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyMa
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\program.exe
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\program.pdb
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\AutoMapper.dll
-C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementBusinessLayer.dll
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.dll
-C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementBusinessLayer.pdb
-C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\AutoMapper.xml
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\CompanyManagementDataLayer.pdb
+C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\bin\Debug\AutoMapper.xml
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\program.exe
 C:\Users\Hitesh-Pc\Desktop\moh\CompanyManagementReps\CompanyManagement\CompanyManagement\program\obj\Debug\program.pdb

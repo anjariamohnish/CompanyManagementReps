@@ -312,7 +312,7 @@ namespace CompanyManagementDataLayer
                     companyDb.Projects.InsertOnSubmit(project);
                     companyDb.SubmitChanges();
 
-                    return "Success";
+                    return "Successfully Added Project";
                 }
                 else
                 {
@@ -364,7 +364,7 @@ namespace CompanyManagementDataLayer
                     tasktechmapper.technologyMasterId = technologyId;
                     companyDb.SubmitChanges();
 
-                    return "Success";
+                    return "Successfully Assigned Technolgy To Task";
                 }
                 else
                 {
@@ -428,7 +428,7 @@ namespace CompanyManagementDataLayer
                     companyDb.SubmitChanges();
 
 
-                    return "Success";
+                    return "Successfully Assigned Employee To Task";
                 }
                 else
                 {
@@ -481,7 +481,7 @@ namespace CompanyManagementDataLayer
                     companyDb.TechnologyMasters.DeleteOnSubmit(deleteTechnology);
 
                     companyDb.SubmitChanges();
-                    return "Success";
+                    return "Successfully Deleted Technology";
 
 
                 }
@@ -508,7 +508,7 @@ namespace CompanyManagementDataLayer
                     companyDb.Tasks.DeleteOnSubmit(deleteTask);
 
                     companyDb.SubmitChanges();
-                    return "Success";
+                    return "Successfully Deleted Task";
                 }
                 else
                 {
@@ -533,7 +533,7 @@ namespace CompanyManagementDataLayer
                     companyDb.Projects.DeleteOnSubmit(deleteProject);
 
                     companyDb.SubmitChanges();
-                    return "Success";
+                    return "Successfully Deleted Project";
                 }
                 else
                 {
@@ -558,18 +558,23 @@ namespace CompanyManagementDataLayer
 
                     t.name = task.Name;
                     t.statusId = task.StatusId;
-                    t.updateDate = task.UpdateDate;
+                    t.updateDate = null;
 
                     companyDb.Tasks.InsertOnSubmit(t);
+                    companyDb.SubmitChanges();
 
                     ProjectTaskMapper mapper = new ProjectTaskMapper();
+
+
 
                     mapper.taskId = t.taskId;
                     mapper.projectId = projectId;
 
                     companyDb.ProjectTaskMappers.InsertOnSubmit(mapper);
+                    companyDb.SubmitChanges();
 
-                    return "Success";
+
+                    return "Successfully Created Task";
                 }
                 else
                 {
