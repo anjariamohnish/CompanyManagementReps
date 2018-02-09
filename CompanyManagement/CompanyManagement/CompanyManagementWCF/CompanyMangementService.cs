@@ -8,7 +8,7 @@ namespace CompanyManagementWCF
         public string AddProject(BOProject project)
         {
             BusinessLayer businessLayer = new BusinessLayer();
-
+// testt git
             return businessLayer.AddProject(project);
 
         }
