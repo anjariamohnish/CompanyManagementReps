@@ -8,7 +8,7 @@ namespace CompanyManagementBusinessLayer
     public class BusinessLayer
     {
         const int maxUsageOfTechnology = 2;
-
+// Test Git
 
         public string DeleteTechnology(int technologyId)
         {
